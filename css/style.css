@@ -70,7 +70,7 @@ a {
     margin:120px auto 15px;
     font-size: 12px;
     max-width: var(--max-width1);
-    color:#666;
+    color:#333;
 }
 
 .topicPath span:nth-child(n+2)::before{
@@ -79,7 +79,7 @@ a {
     width: 12px;
     height:12px;
     vertical-align: middle;
-    background-color: #666;
+    background-color: #333;
     -webkit-mask-image: url("../images/icon-chevronRight.svg");
     mask-image: url("../images/icon-chevronRight.svg");
     mask-repeat: no-repeat;
@@ -273,7 +273,7 @@ article .movePage{
 .campanyInformation {
     max-width: var(--max-width1);
     margin:150px auto 0;
-    border-top: 3px solid #000;
+    border-top: 2px solid #333;
 }
 
 .campanyInformation h1 {
@@ -282,10 +282,11 @@ article .movePage{
 }
 
 .campanyInformation h2 {
-    border-top: 1px dotted #999999;
-    padding-top: 15px;
+    border-top: 1px dotted #666;
+    padding-top: 20px;
     font-size: 16px;
     font-weight: 700;
+    margin: 0 0;
 }
 
 .campanyInformation ul {
@@ -293,8 +294,11 @@ article .movePage{
     flex-wrap: wrap;
     padding-left:0;
     margin-top: 0;
-    font-size: 10px;
+    margin-bottom: 0;
+    font-size: 12px;
     font-weight: 400;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .campanyInformation ul li {
@@ -302,7 +306,6 @@ article .movePage{
     box-sizing: border-box;
     width:240px;
     margin-top: 15px;
-    font-size: 15px;
 }
 
 .campanyInformation ul li:before {
@@ -331,7 +334,7 @@ article .movePage{
     padding-top: 40px;
     padding-bottom:50px;
     color: var(--main-color2);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
 }
 .campanyInformation .movePage:before{
