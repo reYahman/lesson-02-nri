@@ -114,7 +114,8 @@ header .textBox {
     color: #fff;
 }
 
-header .textBox h3 {
+header .textBox h1 small {
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -221,10 +222,11 @@ article .movePage{
     max-width: var(--max-width2);
     padding-bottom:30px;
 }
-.localNavi h3{
+.localNavi h1 {
     padding:15px 10px 0;
     vertical-align: bottom;
     margin-bottom: 0;
+    margin-left: 3%;
     font-size: 15px;
 }
 .localNaviFcontainer {
