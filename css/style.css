@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap&subset=japanese');
 
 /* variables */
 :root {
     --main-color: #005BAC;
+    --main-color2: #0c419a;
     --max-width1: 1000px;
     --max-width2: 800px;
 }
@@ -28,7 +29,6 @@ a {
     left: 0;
     width: 100%;
     z-index: 1;
-    
 }
 
 .globalNavi .f-item {
@@ -53,7 +53,7 @@ a {
     align-items: center;
 }
 .globalNavi .f-item:first-child {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-right: auto;
 }
 .globalNavi .f-item img {
@@ -67,7 +67,7 @@ a {
 
 /* topicPath */
 .topicPath {
-    margin:60px auto 15px;
+    margin:120px auto 15px;
     font-size: 12px;
     max-width: var(--max-width1);
     color:#666;
@@ -114,6 +114,10 @@ header .textBox {
     color: #fff;
 }
 
+header .textBox h3 {
+    font-weight: 400;
+}
+
 /* snsIcons */
 .snsIcons{
     display: flex;
@@ -138,18 +142,22 @@ article {
     margin:0 auto;
 
 }
-/* 記事 */
+article h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
 article > h1::before {
     content:"";
     display:inline-block;
-    width:30px;
-    height:30px;
+    width:25px;
+    height:25px;
     background-image:url(../images/bg-heading-h2.png);
     background-size: contain;
-    vertical-align: middle;
+    vertical-align: -10%;
 }
 article > p {
     line-height: 2;
+    font-weight: 400;
 }
 article > img {
     max-width: 100%;
@@ -198,7 +206,7 @@ article a img{
 
 /* ページ移動 */
 article .movePage{
-    color: var(--main-color);
+    color: var(--main-color2);
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -211,6 +219,7 @@ article .movePage{
     margin: 50px auto;
     background-color: #DEECF8;
     max-width: var(--max-width2);
+    padding-bottom:30px;
 }
 .localNavi h3{
     padding:15px 10px 0;
@@ -221,22 +230,25 @@ article .movePage{
 .localNaviFcontainer {
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
     background-color: #DEECF8;
 }
 
 .localNavi .localNaviItem {
-    display: block;
+    display: flex;
     height: auto;
-    margin: 10px;
-    padding: 10px;
+    margin:6.5px;
+    padding: 5px 20px;
     width:25%;
-    text-align: center;
     background-color: #fff;
     text-decoration: none;
     border: solid 1px #cccccc;
     position: relative;
-    color:var(--main-color);
+    color:var(--main-color2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .localNavi .localNaviItem:after {
@@ -260,13 +272,20 @@ article .movePage{
 /* 企業情報 */
 .campanyInformation {
     max-width: var(--max-width1);
-    margin:30px auto 0;
+    margin:150px auto 0;
     border-top: 3px solid #000;
+}
+
+.campanyInformation h1 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .campanyInformation h2 {
     border-top: 1px dotted #999999;
     padding-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .campanyInformation ul {
@@ -274,6 +293,8 @@ article .movePage{
     flex-wrap: wrap;
     padding-left:0;
     margin-top: 0;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .campanyInformation ul li {
@@ -300,7 +321,7 @@ article .movePage{
 .campanyInformation ul li a {
     display: inline-block;
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--main-color2);
 }
 
 .campanyInformation .movePage {
@@ -309,7 +330,9 @@ article .movePage{
     border-top: 1px dotted #999999;
     padding-top: 40px;
     padding-bottom:50px;
-    color: var(--main-color);
+    color: var(--main-color2);
+    font-size: 10px;
+    font-weight: 400;
 }
 .campanyInformation .movePage:before{
     content: "";
@@ -388,12 +411,13 @@ article .movePage{
 }
 
 .directory .column a:first-child {
-    border-top: 1px solid #888888;
-    border-bottom: 1px solid #888888;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     padding:3px 0;
     margin-top: 12px;
     margin-bottom: 12px;
     font-size: 15px;
+    font-weight: 700;
 }
 
 /* footerLink */
@@ -425,4 +449,5 @@ footer .footerLink a:first-child {
 /* footerCopyright */
 footer .footerCopyright {
     font-size: 9px;
+    color: #888;
 }
